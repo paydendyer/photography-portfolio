@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
     
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+    <link href="js/filter.js">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -71,31 +71,53 @@
           </div>
         </div>
       </section>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Show All</button>"
+  <button class="btn" onclick="filterSelection('nature')">Nature</button>"
+  <button class="btn" onclick="filterSelection('portraits')">Portraits</button>"
+  <button class="btn" onclick="filterSelection('city lights')">City Lights</button>"
+  <button class="btn" onclick="filterSelection('buildings')">Buildings</button>"
+</div>
+   
+<div class="container-fluid">
+  <div class ="row">
+    <div class="column nature">
+      <div class="content">
 
-    <div class="container-fluid">
+      </div>
+    </div>
+  </div>
         
       
-
 
       <section class="row align-items-stretch photos" id="section-photos">
         <div class="col-12">
         <div class="row align-items-stretch">
         
         <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
-          <a href="images/img-1.jpg" class="d-block photo-item" data-fancybox="gallery">
+          <div class="column buildings">
+            <div class="content">
+            <a href="images/img-1.jpg" class="d-block photo-item" data-fancybox="gallery">
             <img src="images/img-1.jpg" alt="Image" class="img-fluid">
             <div class="photo-text-more">
               <span class="icon icon-search"></span>
-            </div>
+           </div>
+          </div> 
+        </div>
           </a>
         </div>
         <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="column buildings">
+            <div class="content">
           <a href="images/img-2.jpg" class="d-block photo-item" data-fancybox="gallery">
             <img src="images/img-2.jpg" alt="Image" class="img-fluid">
             <div class="photo-text-more">
               <span class="icon icon-search"></span>
             </div>
+          </div>
           </a>
+          </div>
+          </div>
         </div>
         <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <a href="images/img-5.jpg" class="d-block photo-item" data-fancybox="gallery">
